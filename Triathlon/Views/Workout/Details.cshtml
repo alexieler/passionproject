@@ -1,0 +1,71 @@
+﻿@model Triathlon.Models.Workout
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="main-intro">
+    <img id="main-image" src="~/images/runner.jpeg" alt="Man running up stairs">
+    <h1 class="main-header">@Html.DisplayFor(model => model.Athlete.FirstName) @Html.DisplayFor(model => model.Athlete.LastName)'s Workout</h1>
+</div>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal details-table">
+        <div class="icon">
+            <i class="fas fa-stopwatch"></i>
+        </div>
+        <dt>
+            @Html.DisplayNameFor(model => model.Athlete.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Athlete.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkoutDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkoutDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkoutDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkoutDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkoutDistance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkoutDistance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkoutIntensity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkoutIntensity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkoutCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkoutCategory)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.WorkoutID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

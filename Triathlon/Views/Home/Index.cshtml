@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="main-intro">
+    <img id="main-image" class="front-page" src="~/images/meghan-holmes-779221-unsplash.jpg" alt="Background image of a trainer with a client at gym">
+    <h1 class="main-header">Welcome back! Let's <span class="logo-text"><strong>Log It</strong></span></h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Keep track of your clients!</h2>
+        <p>Log it makes it easy to update all of your client's information. All in one convenient location. </p>
+        <p><a>@Html.ActionLink("GO EXPLORE", "Index", "Athlete")</a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>Update your client's workouts!</h2>
+        <p>View and keep track of the hard work your clients are up to.</p>
+        <p><a>@Html.ActionLink("UPDATE THEIR PROGRESS", "Index", "Workout")</a></p>
+    </div>
+</div>
